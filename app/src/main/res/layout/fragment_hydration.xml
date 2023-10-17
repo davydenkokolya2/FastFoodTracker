@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_grey"
+    tools:context=".ui.hydration.HydrationFragment">
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/current_hydration"
+        android:textColor="@color/grey"
+        app:layout_constraintBottom_toTopOf="@+id/progressBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvCountHamburger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/_500_ml"
+        android:textColor="@color/grey"
+        android:translationZ="1dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnHamburgerHydration"
+        app:layout_constraintEnd_toEndOf="@+id/btnHamburgerHydration"
+        app:layout_constraintStart_toStartOf="@+id/btnHamburgerHydration"
+        app:layout_constraintTop_toTopOf="@+id/btnHamburgerHydration" />
+
+    <TextView
+        android:id="@+id/tvCountCommonWater"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/_500_ml"
+        android:textColor="@color/grey"
+        android:textSize="20sp"
+        android:translationZ="1dp"
+        app:layout_constraintEnd_toEndOf="@+id/tvPercent"
+        app:layout_constraintStart_toStartOf="@+id/tvPercent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPercent" />
+
+    <TextView
+        android:id="@+id/tvPercent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="53dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/_79"
+        android:textColor="@color/red"
+        android:textSize="50sp"
+        android:translationZ="1dp"
+        app:layout_constraintBottom_toBottomOf="@+id/progressBar"
+        app:layout_constraintEnd_toEndOf="@+id/progressBar"
+        app:layout_constraintStart_toStartOf="@+id/progressBar"
+        app:layout_constraintTop_toTopOf="@+id/progressBar" />
+
+    <TextView
+        android:id="@+id/tvCountShawarma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/_500_ml"
+        android:textColor="@color/grey"
+        android:translationZ="1dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnTeaHydration"
+        app:layout_constraintEnd_toEndOf="@+id/btnHamburgerHydration"
+        app:layout_constraintStart_toStartOf="@+id/btnHamburgerHydration"
+        app:layout_constraintTop_toTopOf="@+id/btnTeaHydration" />
+
+    <TextView
+        android:id="@+id/tvCountFrenchFries"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/_500_ml"
+        android:textColor="@color/grey"
+        android:translationZ="1dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnHamburgerHydration"
+        app:layout_constraintEnd_toEndOf="@+id/btnFrenchFriesHydration"
+        app:layout_constraintStart_toStartOf="@+id/btnFrenchFriesHydration"
+        app:layout_constraintTop_toTopOf="@+id/btnHamburgerHydration" />
+
+    <TextView
+        android:id="@+id/tvCountCola"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/_500_ml"
+        android:textColor="@color/grey"
+        android:translationZ="1dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnCoffeeHydration"
+        app:layout_constraintEnd_toEndOf="@+id/btnFrenchFriesHydration"
+        app:layout_constraintStart_toStartOf="@+id/btnFrenchFriesHydration"
+        app:layout_constraintTop_toTopOf="@+id/btnCoffeeHydration" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/btnHomeHydration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_button_home_false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btnDropHydration"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/btnDropHydration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_button_food_statistics_true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btnHomeHydration"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/btnHamburgerHydration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/icon_hamburger_card_detail"
+        app:layout_constraintEnd_toStartOf="@+id/btnFrenchFriesHydration"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar" />
+
+    <ImageView
+        android:id="@+id/btnCoffeeHydration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_cola_card_detail"
+        app:layout_constraintBottom_toBottomOf="@+id/btnTeaHydration"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnTeaHydration" />
+
+    <ImageView
+        android:id="@+id/btnFrenchFriesHydration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_french_fries_card_detail"
+        app:layout_constraintBottom_toBottomOf="@+id/btnHamburgerHydration"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnHamburgerHydration" />
+
+    <ImageView
+        android:id="@+id/btnTeaHydration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/icon_shawarma_card_detail"
+        app:layout_constraintEnd_toStartOf="@+id/btnCoffeeHydration"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnHamburgerHydration" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="332dp"
+        android:layout_height="339dp"
+        android:layout_marginTop="60dp"
+        android:progressDrawable="@drawable/custom_progress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

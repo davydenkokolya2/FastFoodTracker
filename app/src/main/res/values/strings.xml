@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">FastFoodTracker</string>
+    <string name="onboarding_1">Your trusted companion in maintaining healthy hydration.</string>
+    <string name="onboarding_2">Track your progress in real time with colorful graphs and charts.</string>
+    <string name="next">NEXT</string>
+    <string name="start">START</string>
+    <string name="add">ADD</string>
+    <string name="what_did_you_drink">What Did You Eat?</string>
+    <string name="how_much_did_you_drink">How Much Did You Eat?</string>
+    <string name="_0_ml">0</string>
+    <string name="_1000_ml">10</string>
+    <string name="juice">Juice</string>
+    <string name="hamburger">Hamburger</string>
+    <string name="french_fries">French fries</string>
+    <string name="shawarma">Shawarma</string>
+    <string name="_290ml">200 kcal</string>
+    <string name="bottle">Hamburger</string>
+    <string name="_600ml">300 kcal</string>
+    <string name="_1300ml">1300ml</string>
+    <string name="remaining">Remaining</string>
+    <string name="target">Target</string>
+    <string name="_2600ml">2600 kcal</string>
+    <string name="cola">Cola</string>
+    <string name="_350ml">250 kcal</string>
+    <string name="home">Home</string>
+    <string name="_250ml">600 kcal</string>
+    <string name="_0">0%</string>
+    <string name="current_hydration">Detail</string>
+    <string name="_500_ml">500 ml</string>
+    <string name="_79">79%</string>
+    <string name="textview">TextView</string>
+    <string name="kcal">kcal</string>
+</resources>

@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/icon_background"
+    tools:context=".ui.add_drink.AddDrinkFragment">
+
+
+    <TextView
+        android:id="@+id/tvAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/add"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:translationZ="1dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnAdd"
+        app:layout_constraintEnd_toEndOf="@+id/btnAdd"
+        app:layout_constraintStart_toStartOf="@+id/btnAdd"
+        app:layout_constraintTop_toTopOf="@+id/btnAdd" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/icon_white_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/btnAdd"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="14dp"
+        android:src="@drawable/icon_button"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintStart_toStartOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/what_did_you_drink"
+        android:textColor="@color/grey"
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/how_much_did_you_drink"
+        android:textColor="@color/grey"
+        app:layout_constraintBottom_toTopOf="@+id/tvCurrentML"
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintStart_toStartOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/tvCurrentML"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/_0_ml"
+        android:textColor="@color/grey"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/seekBar2"
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintStart_toStartOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/_0_ml"
+        android:textColor="@color/red"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnAdd"
+        app:layout_constraintStart_toStartOf="@+id/seekBar2" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/_1000_ml"
+        android:textColor="@color/red"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnAdd"
+        app:layout_constraintEnd_toEndOf="@+id/seekBar2" />
+
+    <ImageView
+        android:id="@+id/btnHamburger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/icon_hamburger_button_false"
+        app:layout_constraintEnd_toStartOf="@+id/btnFrenchFries"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <ImageView
+        android:id="@+id/btnFrenchFries"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_french_fries_button_false"
+        app:layout_constraintEnd_toStartOf="@+id/btnShawarma"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnHamburger"
+        app:layout_constraintTop_toTopOf="@+id/btnHamburger" />
+
+    <ImageView
+        android:id="@+id/btnShawarma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_shawarma_button_false"
+        app:layout_constraintEnd_toStartOf="@+id/btnCola"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnFrenchFries"
+        app:layout_constraintTop_toTopOf="@+id/btnFrenchFries" />
+
+    <ImageView
+        android:id="@+id/btnCola"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="14dp"
+        android:src="@drawable/icon_cola_button_false"
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnShawarma"
+        app:layout_constraintTop_toTopOf="@+id/btnShawarma" />
+
+    <TextView
+        android:id="@+id/tvColaAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="14dp"
+        android:text="@string/cola"
+        android:textColor="@color/middle_grey"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnHamburger"
+        app:layout_constraintEnd_toEndOf="@+id/btnCola"
+        app:layout_constraintStart_toStartOf="@+id/btnCola" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:src="@drawable/icon_red_wave"
+        app:layout_constraintEnd_toEndOf="@+id/btnCola"
+        app:layout_constraintStart_toStartOf="@+id/btnHamburger"
+        app:layout_constraintTop_toBottomOf="@+id/btnFrenchFries" />
+
+    <TextView
+        android:id="@+id/tvHasburgerAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="14dp"
+        android:text="@string/hamburger"
+        android:textColor="@color/middle_grey"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnHamburger"
+        app:layout_constraintEnd_toEndOf="@+id/btnHamburger"
+        app:layout_constraintStart_toStartOf="@+id/btnHamburger" />
+
+    <TextView
+        android:id="@+id/tvFrenchFriesAdd"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="@string/french_fries"
+        android:textColor="@color/middle_grey"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/btnFrenchFries"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/btnFrenchFries"
+        app:layout_constraintTop_toTopOf="@+id/btnFrenchFries" />
+
+    <TextView
+        android:id="@+id/tvShawarmaAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="14dp"
+        android:text="@string/shawarma"
+        android:textColor="@color/middle_grey"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnHamburger"
+        app:layout_constraintEnd_toEndOf="@+id/btnShawarma"
+        app:layout_constraintStart_toStartOf="@+id/btnShawarma" />
+
+    <SeekBar
+        android:id="@+id/seekBar2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="12dp"
+        android:progressDrawable="@drawable/seekbar_style"
+        android:thumb="@drawable/icon_red_thumb"
+        app:layout_constraintBottom_toTopOf="@+id/textView8"
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintStart_toStartOf="@+id/imageView3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
